@@ -31,11 +31,11 @@ class Database:
             PASSWORD=os.environ.get('DEV_PASSWORD')
 
         conn = psycopg2.connect(
-            host="23634c388c2e",
-            port="5432",
-            database="postgres",
-            user="postgres",
-            password="BojoB0j0%"
+            host=HOST,
+            port=PORT,
+            database=DATABASE,
+            user=USER,
+            password=PASSWORD
         )
         return conn
 
