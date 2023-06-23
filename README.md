@@ -29,6 +29,11 @@ sudo docker build -t shoppinglist .
 
 sudo docker run shoppinglist
 
+#### Push to registry
+sudo docker tag shoppinglist thundercatsho/shoppinglist:latest
+sudo docker login
+sudo docker push thundercatsho/shoppinglist:latest
+
 ### DATABASE
 
 Uses postgres, set the following environment varibales to connect in production environment.
