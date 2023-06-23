@@ -28,3 +28,14 @@ sudo docker build -t shoppinglist .
 #### Run the container
 
 sudo docker run shoppinglist
+
+### DATABASE
+
+Uses postgres, set the following environment varibales to connect in production environment.
+
+ENVIRONMENT=PROD
+PROD_HOST
+PROD_PORT
+PROD_DATABASE
+PROD_USER
+PROD_PASSWORD
